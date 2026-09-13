@@ -87,4 +87,18 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   window.addEventListener('scroll', highlightNavOnScroll, { passive: true });
+
+  // Bind centralized URLs & emails from constants.js
+  if (typeof APP_CONSTANTS !== 'undefined') {
+    document.querySelectorAll('[data-constant="playStore"]').forEach(el => {
+      el.href = APP_CONSTANTS.playStoreUrl;
+    });
+    document.querySelectorAll('[data-constant="privacy"]').forEach(el => {
+      el.href = APP_CONSTANTS.privacyPolicyUrl;
+    });
+    document.querySelectorAll('[data-constant="support"]').forEach(el => {
+      el.href = `mailto:${APP_CONSTANTS.supportEmail}`;
+      el.textContent = APP_CONSTANTS.supportEmail;
+    });
+  }
 });

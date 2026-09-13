@@ -75,7 +75,19 @@
   }
 
   .rules-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rules-grid .rule-card {
+    grid-column: span 1;
+  }
+
+  .rules-grid .rule-card:nth-child(4) {
+    grid-column: span 1;
+  }
+
+  .rules-grid .rule-card:nth-child(5) {
+    grid-column: 1 / -1;
   }
 
   .worlds-grid {
@@ -101,16 +113,7 @@
   }
 
   .cta-banner {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
-
-  .cta-left p {
-    margin: 0 auto 32px;
-  }
-
-  .cta-left .btn-playstore {
-    margin: 0 auto;
+    padding: 48px 32px;
   }
 
   .footer-container {
@@ -129,7 +132,17 @@
   }
 
   .section-wrapper {
-    padding: 70px 18px;
+    padding: 40px 18px;
+  }
+
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rules-grid .rule-card,
+  .rules-grid .rule-card:nth-child(4),
+  .rules-grid .rule-card:nth-child(5) {
+    grid-column: auto;
   }
 
   .hero-section {

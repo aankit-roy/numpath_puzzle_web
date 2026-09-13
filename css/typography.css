@@ -101,19 +101,4 @@ p {
   color: var(--accent-mint);
   font-weight: 600;
 }
-
-.section-tag {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: rgba(0, 230, 118, 0.1);
-  border: 1px solid rgba(0, 230, 118, 0.25);
-  color: var(--accent-mint);
-  font-family: var(--font-retro);
-  font-size: 0.65rem;
-  padding: 6px 14px;
-  border-radius: var(--radius-full);
-  margin-bottom: 16px;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
 }
