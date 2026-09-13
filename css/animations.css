@@ -1,0 +1,129 @@
+/* =========================================
+   Animations: Path Tracing, Pulses, Glow Effects
+   ========================================= */
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+    box-shadow: 0 0 10px var(--accent-mint);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(0.85);
+    box-shadow: 0 0 4px var(--accent-mint);
+  }
+}
+
+@keyframes checkpoint-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 15px rgba(245, 158, 11, 0.4);
+  }
+  50% {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px rgba(245, 158, 11, 0.8);
+  }
+}
+
+@keyframes float-device {
+  0%, 100% {
+    transform: translateY(0px) rotate(-1deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(1deg);
+  }
+}
+
+@keyframes aura-rotate {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+
+/* SVG Path Draw Animation */
+@keyframes draw-path {
+  0% {
+    stroke-dashoffset: 2000;
+    opacity: 0;
+  }
+  15% {
+    opacity: 1;
+  }
+  85% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  95%, 100% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}
+
+/* Neon Glow Stroke */
+.neon-path-line {
+  stroke: var(--accent-mint);
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  filter: drop-shadow(0 0 8px rgba(0, 230, 118, 0.9)) drop-shadow(0 0 16px rgba(0, 230, 118, 0.5));
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  animation: draw-path 6s ease-in-out infinite;
+}
+
+.checkpoint-node {
+  animation: checkpoint-pulse 2.5s infinite ease-in-out;
+}
+
+.device-floating {
+  animation: float-device 6s ease-in-out infinite;
+}
+
+.bg-ambient-aura {
+  position: absolute;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  filter: blur(140px);
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.18;
+}
+
+.aura-mint {
+  background: radial-gradient(circle, var(--accent-mint) 0%, transparent 70%);
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.aura-amber {
+  background: radial-gradient(circle, var(--accent-amber) 0%, transparent 70%);
+  bottom: 10%;
+  right: 10%;
+}
+
+.aura-cyan {
+  background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
+  top: 50%;
+  left: 10%;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+  .neon-path-line,
+  .checkpoint-node,
+  .device-floating,
+  .pulse-dot {
+    animation: none !important;
+  }
+  .neon-path-line {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+}

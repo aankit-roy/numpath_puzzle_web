@@ -1,0 +1,563 @@
+/* =========================================
+   Sections: Hero, Rules, Worlds, Daily, Themes, Features, CTA
+   ========================================= */
+
+.section-wrapper {
+  position: relative;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 60px;
+}
+
+.section-header p {
+  margin-top: 14px;
+  font-size: 1.15rem;
+}
+
+/* =========================================
+   1. Hero Section
+   ========================================= */
+.hero-section {
+  position: relative;
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 140px 24px 80px;
+  overflow: hidden;
+}
+
+.hero-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero-tagline {
+  font-size: clamp(2.4rem, 4.5vw, 4rem);
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+}
+
+.hero-description {
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 580px;
+}
+
+.hero-cta-group {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 48px;
+}
+
+.hero-stats-strip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  width: 100%;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.stat-number {
+  font-family: var(--font-retro);
+  font-size: 1.15rem;
+  color: var(--accent-mint);
+  letter-spacing: -0.02em;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+/* Hero Phone Mockup */
+.hero-mockup-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.phone-frame {
+  width: 320px;
+  height: 640px;
+  background: #0C1017;
+  border-radius: 46px;
+  border: 4px solid #232C3E;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 40px rgba(0, 230, 118, 0.15);
+  position: relative;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.phone-notch {
+  width: 120px;
+  height: 18px;
+  background: #181F2C;
+  border-radius: 0 0 14px 14px;
+  margin: 0 auto 16px;
+}
+
+.phone-screen {
+  flex: 1;
+  background: #090C12;
+  border-radius: 32px;
+  padding: 20px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+.phone-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-retro);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+}
+
+.phone-game-board {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #101520;
+  border: 2px solid rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board-svg-container {
+  width: 100%;
+  height: 100%;
+}
+
+.phone-bottom-bar {
+  text-align: center;
+}
+
+.phone-live-indicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--font-retro);
+  font-size: 0.58rem;
+  color: var(--accent-mint);
+  background: rgba(0, 230, 118, 0.1);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+}
+
+/* =========================================
+   2. Rules Walkthrough Section
+   ========================================= */
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.rule-card {
+  padding: 36px 28px;
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--radius-lg);
+  position: relative;
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+}
+
+.rule-badge {
+  font-family: var(--font-retro);
+  font-size: 0.7rem;
+  color: var(--accent-amber);
+  margin-bottom: 18px;
+}
+
+.rule-title {
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+  color: var(--text-primary);
+}
+
+.rule-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 24px;
+}
+
+.rule-visual {
+  width: 100%;
+  height: 180px;
+  background: #0A0D14;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  margin-top: auto;
+}
+
+/* =========================================
+   3. World Progression Section
+   ========================================= */
+.worlds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.world-card {
+  padding: 28px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.world-card:hover {
+  border-color: var(--accent-mint);
+  transform: translateY(-4px);
+}
+
+.world-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.world-num {
+  font-family: var(--font-retro);
+  font-size: 0.72rem;
+  color: var(--accent-cyan);
+}
+
+.world-grid-size {
+  font-family: var(--font-retro);
+  font-size: 0.65rem;
+  padding: 4px 10px;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: var(--radius-xs);
+  color: var(--text-secondary);
+}
+
+.world-name {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+}
+
+.world-range {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-mint);
+}
+
+.world-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+/* =========================================
+   4. Daily Challenge Section
+   ========================================= */
+.daily-box {
+  background: linear-gradient(135deg, #111723 0%, #0A0D14 100%);
+  border: 1px solid var(--border-neon);
+  border-radius: var(--radius-lg);
+  padding: 48px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  box-shadow: 0 0 40px rgba(0, 230, 118, 0.1);
+}
+
+.daily-badge-strip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.streak-flame-chip {
+  background: rgba(245, 158, 11, 0.15);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  color: var(--accent-amber);
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  font-family: var(--font-retro);
+  font-size: 0.65rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.daily-timer-wrap {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0 32px;
+}
+
+.countdown-box {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 18px;
+  text-align: center;
+}
+
+.countdown-num {
+  font-family: var(--font-retro);
+  font-size: 1.3rem;
+  color: #FFFFFF;
+}
+
+.countdown-lbl {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.05em;
+}
+
+.daily-visual-preview {
+  background: #080B10;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* =========================================
+   5. Visual Themes Showcase
+   ========================================= */
+.themes-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 36px;
+  align-items: center;
+}
+
+.themes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.theme-tab-btn {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  color: var(--text-primary);
+  text-align: left;
+}
+
+.theme-tab-btn:hover, .theme-tab-btn.active {
+  background: var(--bg-surface-elevated);
+  border-color: var(--accent-mint);
+  transform: translateX(6px);
+}
+
+.theme-btn-info h4 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.theme-btn-info p {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.theme-color-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.theme-display-canvas {
+  background: #0D121B;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 380px;
+  transition: background 0.4s ease, border-color 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* =========================================
+   6. Core Features Section
+   ========================================= */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.feature-card {
+  padding: 32px;
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  transition: all var(--transition-normal);
+}
+
+.feature-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-light);
+  box-shadow: var(--shadow-md);
+}
+
+.feature-icon-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  background: rgba(0, 230, 118, 0.1);
+  border: 1px solid rgba(0, 230, 118, 0.25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: var(--accent-mint);
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.feature-desc {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+/* =========================================
+   7. Final CTA Banner with QR Code
+   ========================================= */
+.cta-banner {
+  background: linear-gradient(135deg, #101622 0%, #07090E 100%);
+  border: 1px solid var(--border-neon);
+  border-radius: var(--radius-lg);
+  padding: 60px 48px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 40px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 50px rgba(0, 230, 118, 0.15);
+}
+
+.cta-left h2 {
+  margin-bottom: 16px;
+}
+
+.cta-left p {
+  font-size: 1.15rem;
+  margin-bottom: 32px;
+  max-width: 520px;
+}
+
+.cta-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 30px;
+  text-align: center;
+}
+
+.qr-code-box {
+  width: 140px;
+  height: 140px;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.qr-code-box svg {
+  width: 100%;
+  height: 100%;
+}
+
+.qr-label {
+  font-family: var(--font-retro);
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.03em;
+}

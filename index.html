@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Primary Meta Tags -->
+  <title>Numpath Puzzle — Official Game Website | Download for Android</title>
+  <meta name="title" content="Numpath Puzzle — Official Game Website | Download for Android">
+  <meta name="description" content="One path. Every cell. No mistakes. Numpath Puzzle is the minimalist spatial logic game with 300 handcrafted levels, daily challenges, and offline play. Download now on Google Play.">
+  <meta name="keywords" content="Numpath Puzzle, number path puzzle, logic grid game, brain training, minimal puzzle, android puzzle game, number connection, offline logic puzzle">
+  <meta name="author" content="Aankit">
+  <meta name="theme-color" content="#090B10">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://numpathpuzzle.com/">
+  <meta property="og:title" content="Numpath Puzzle — One Path. Every Cell. No Mistakes.">
+  <meta property="og:description" content="Master 300 progressive spatial logic levels and global daily challenges. Free to play on Android.">
+  <meta property="og:image" content="assets/icons/app_icon.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="Numpath Puzzle — One Path. Every Cell. No Mistakes.">
+  <meta property="twitter:description" content="The minimalist logic puzzle where one continuous path must cover 100% of the board without crossing.">
+  <meta property="twitter:image" content="assets/icons/app_icon.png">
+
+  <!-- Google Fonts Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/design-tokens.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <!-- Official App Icon & Favicon -->
+  <link rel="icon" type="image/png" href="assets/icons/app_icon.png">
+  <link rel="apple-touch-icon" href="assets/icons/app_icon.png">
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Numpath Puzzle",
+    "operatingSystem": "Android",
+    "applicationCategory": "GameApplication",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "128"
+    },
+    "description": "Minimalist spatial logic puzzle game with 300 handcrafted levels, daily challenges, and custom themes."
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Ambient Background Glows -->
+  <div class="bg-ambient-aura aura-mint" aria-hidden="true"></div>
+  <div class="bg-ambient-aura aura-cyan" aria-hidden="true"></div>
+  <div class="bg-ambient-aura aura-amber" aria-hidden="true"></div>
+
+  <!-- Header / Navigation Bar -->
+  <header class="site-header" id="site-header">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Numpath Puzzle Home">
+        <div class="brand-icon">
+          <img src="assets/icons/app_icon.png" alt="Numpath Puzzle Logo" class="brand-app-img">
+        </div>
+        <span class="brand-name">NUMPATH <span>PUZZLE</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#rules" class="nav-link">How to Play</a></li>
+        <li><a href="#worlds" class="nav-link">300 Levels</a></li>
+        <li><a href="#daily" class="nav-link">Daily Puzzle</a></li>
+        <li><a href="#themes" class="nav-link">Themes</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+      </ul>
+
+      <!-- Action Items -->
+      <div class="nav-actions">
+        <button class="theme-btn" id="theme-toggle-btn" aria-label="Toggle Dark and Light Mode" title="Toggle Theme">☀️</button>
+        <a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn btn-primary nav-cta">
+          Get on Google Play ↗
+        </a>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Open Navigation Menu" aria-expanded="false">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <aside class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <ul class="mobile-nav-links">
+      <li><a href="#about" class="mobile-nav-link">About Game</a></li>
+      <li><a href="#rules" class="mobile-nav-link">How to Play</a></li>
+      <li><a href="#worlds" class="mobile-nav-link">300 Levels & Worlds</a></li>
+      <li><a href="#daily" class="mobile-nav-link">Daily Challenge</a></li>
+      <li><a href="#themes" class="mobile-nav-link">Visual Themes</a></li>
+      <li><a href="#features" class="mobile-nav-link">Game Features</a></li>
+      <li><a href="privacy.html" class="mobile-nav-link">Privacy Policy</a></li>
+    </ul>
+    <a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="btn btn-primary" 
+       style="width: 100%; margin-top: 10px;">
+      Download on Google Play ↗
+    </a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main>
+
+    <!-- 1. Hero Section -->
+    <section class="hero-section" id="hero">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <!-- Official App Identity Badge -->
+          <div class="hero-app-badge">
+            <img src="assets/icons/app_icon.png" alt="Numpath Puzzle App Icon" class="hero-app-icon-img">
+            <div>
+              <div class="badge-version" style="margin-bottom: 6px;">
+                <span class="pulse-dot"></span>
+                <span>VERSION 1.0.2 • GOOGLE PLAY</span>
+              </div>
+              <div style="font-family: var(--font-retro); font-size: 0.7rem; color: var(--accent-amber); display: flex; align-items: center; gap: 8px;">
+                <span>★ 4.9 RATING</span>
+                <span style="color: var(--text-muted);">•</span>
+                <span style="color: var(--accent-cyan);">BY AANKIT</span>
+              </div>
+            </div>
+          </div>
+
+          <h1 class="hero-tagline">
+            One Path. Every Cell. <br>
+            <span class="text-gradient-mint">No Mistakes.</span>
+          </h1>
+
+          <p class="hero-description">
+            The minimalist spatial logic puzzle designed to sharpen focus. Start at <strong>1</strong>, trace an unbroken path through numbered checkpoints in order, and fill <strong>100% of the grid</strong> without ever crossing over your steps.
+          </p>
+
+          <div class="hero-cta-group">
+            <!-- Official Google Play CTA -->
+            <a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn btn-playstore">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;">
+                <path d="M3.6 2.3A1.8 1.8 0 0 0 3 3.6v16.8a1.8 1.8 0 0 0 .6 1.3l9.4-9.4L3.6 2.3z" fill="#00E5FF"/>
+                <path d="M16.5 9.5l-3.5 2.8 3.5 2.8 4-2.3c1.2-.7 1.2-1.9 0-2.6l-4-2.3l0 1.6z" fill="#FFD54F"/>
+                <path d="M13 12.3L3.6 21.7c.4.2 1 .2 1.5-.1l11.4-6.5l-3.5-2.8z" fill="#FF3366"/>
+                <path d="M16.5 8.9L5.1 2.4c-.5-.3-1.1-.3-1.5-.1L13 11.7l3.5-2.8z" fill="#00E676"/>
+              </svg>
+              <div class="btn-playstore-content">
+                <span class="btn-playstore-small">GET IT ON</span>
+                <span class="btn-playstore-title">Google Play</span>
+              </div>
+            </a>
+
+            <a href="#rules" class="btn btn-secondary">
+              Explore Game Rules ↓
+            </a>
+          </div>
+
+          <!-- Quick Stats Strip -->
+          <div class="hero-stats-strip">
+            <div class="stat-item">
+              <span class="stat-number">300+</span>
+              <span class="stat-label">Handcrafted Levels</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">DAILY</span>
+              <span class="stat-label">Global Puzzles</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">6 THEMES</span>
+              <span class="stat-label">Sleek Visuals</span>
+            </div>
+            <div class="stat-item">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Offline Capable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Mobile Frame Showcase with Auto-Path Animation -->
+        <div class="hero-mockup-wrap">
+          <div class="phone-frame device-floating">
+            <div class="phone-notch"></div>
+            <div class="phone-screen">
+              <div class="phone-top-bar">
+                <div style="display: flex; align-items: center; gap: 8px;">
+                  <img src="assets/icons/app_icon.png" alt="App" width="18" height="18" style="border-radius: 4px;">
+                  <span>LVL 42</span>
+                </div>
+                <span style="color: var(--accent-amber);">★ ★ ★</span>
+                <span>5×5 GRID</span>
+              </div>
+
+              <!-- Live Auto-Animated SVG Board -->
+              <div class="phone-game-board">
+                <div id="hero-board-svg" class="board-svg-container" aria-label="Animated Numpath Puzzle Board Demo"></div>
+              </div>
+
+              <div class="phone-bottom-bar">
+                <div class="phone-live-indicator">
+                  <span class="pulse-dot" style="width: 6px; height: 6px;"></span>
+                  <span>100% BOARD COVERAGE ACHIEVED</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Game Overview -->
+    <section class="section-wrapper" id="about">
+      <div class="section-header">
+        <span class="section-tag">// PURE LOGIC PURSUIT</span>
+        <h2>Designed for Mindful Focus</h2>
+        <p>Numpath Puzzle strips away the noise of modern mobile games. No countdown timers pressuring you, no pay-to-win boosters, no intrusive interruptions. Just pure spatial reasoning and the profound satisfaction of completing an unbroken circuit.</p>
+      </div>
+    </section>
+
+    <!-- 3. Rules Walkthrough Section -->
+    <section class="section-wrapper" id="rules">
+      <div class="section-header">
+        <span class="section-tag">// GAMEPLAY MECHANICS</span>
+        <h2>The 3 Golden Rules</h2>
+        <p>Simple enough to learn in 10 seconds, deep enough to test your mind across 300 evolving labyrinths.</p>
+      </div>
+
+      <div class="rules-grid">
+        <!-- Rule 1 -->
+        <article class="rule-card interactive-hover">
+          <span class="rule-badge">RULE 01</span>
+          <h3 class="rule-title">Start at 1, Connect Sequentially</h3>
+          <p class="rule-desc">
+            Your journey always begins at number <strong>1</strong>. Trace the path and connect numbered checkpoints consecutively: <strong>1 → 2 → 3 → 4...</strong> until you reach the final number.
+          </p>
+          <div class="rule-visual">
+            <!-- Diagram Rule 1 -->
+            <svg viewBox="0 0 200 120" width="180" height="110">
+              <rect x="20" y="35" width="45" height="45" rx="8" fill="#182232" stroke="rgba(255,255,255,0.1)"/>
+              <circle cx="42.5" cy="57.5" r="14" fill="#F59E0B" />
+              <text x="42.5" y="62" text-anchor="middle" font-family="'Press Start 2P'" font-size="10" fill="#090C12">1</text>
+
+              <path d="M 65 57.5 L 95 57.5" stroke="#00E676" stroke-width="4" stroke-dasharray="6,4"/>
+
+              <rect x="95" y="35" width="45" height="45" rx="8" fill="#182232" stroke="rgba(255,255,255,0.1)"/>
+              <circle cx="117.5" cy="57.5" r="14" fill="#F59E0B" />
+              <text x="117.5" y="62" text-anchor="middle" font-family="'Press Start 2P'" font-size="10" fill="#090C12">2</text>
+
+              <path d="M 140 57.5 L 165 57.5" stroke="#00E676" stroke-width="4" stroke-dasharray="6,4"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Rule 2 -->
+        <article class="rule-card interactive-hover">
+          <span class="rule-badge">RULE 02</span>
+          <h3 class="rule-title">Cover 100% of Every Cell</h3>
+          <p class="rule-desc">
+            Reaching the final number is not enough. <strong>Every single tile</strong> on the grid must be traversed by your line. Leaving even one empty square prevents the stage clear.
+          </p>
+          <div class="rule-visual">
+            <!-- Diagram Rule 2 -->
+            <svg viewBox="0 0 140 120" width="140" height="110">
+              <rect x="10" y="10" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <rect x="48" y="10" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <rect x="86" y="10" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <rect x="10" y="48" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <rect x="48" y="48" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <rect x="86" y="48" width="32" height="32" rx="6" fill="#00E676" opacity="0.9"/>
+              <!-- Checkmark icon -->
+              <circle cx="64" cy="48" r="20" fill="#090C12" stroke="#00E676" stroke-width="2"/>
+              <path d="M57 48 L62 53 L71 43" stroke="#00E676" stroke-width="3" fill="none" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </article>
+
+        <!-- Rule 3 -->
+        <article class="rule-card interactive-hover">
+          <span class="rule-badge">RULE 03</span>
+          <h3 class="rule-title">Orthogonal Only, No Crossing</h3>
+          <p class="rule-desc">
+            Move strictly up, down, left, and right. <strong>No diagonal shortcuts</strong>. You cannot cross over an already occupied line or visit any tile more than once.
+          </p>
+          <div class="rule-visual">
+            <!-- Diagram Rule 3 -->
+            <svg viewBox="0 0 160 120" width="160" height="110">
+              <!-- Orthogonal moves in green -->
+              <path d="M 40 90 L 40 40 L 90 40 L 90 90" fill="none" stroke="#00E676" stroke-width="4" stroke-linecap="round"/>
+              <circle cx="40" cy="90" r="6" fill="#00E676"/>
+              <circle cx="90" cy="90" r="6" fill="#00E676"/>
+              <!-- Diagonal blocked in red -->
+              <line x1="105" y1="40" x2="145" y2="85" stroke="#FF3366" stroke-width="3" stroke-dasharray="4,4"/>
+              <line x1="145" y1="40" x2="105" y2="85" stroke="#FF3366" stroke-width="3"/>
+            </svg>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. World Difficulty Progression -->
+    <section class="section-wrapper" id="worlds">
+      <div class="section-header">
+        <span class="section-tag">// 300 HANDCRAFTED CHALLENGES</span>
+        <h2>6 Worlds of Evolving Topology</h2>
+        <p>From gentle introduction grids to intricate 7×7 labyrinths that demand multi-step forward planning.</p>
+      </div>
+
+      <div class="worlds-grid">
+        <!-- World 1 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 01</span>
+            <span class="world-grid-size">4×4 GRID</span>
+          </div>
+          <h3 class="world-name">Starter Path</h3>
+          <span class="world-range">Levels 1 – 25</span>
+          <p class="world-desc">Master the core logic lines and intuitive corner fills. Perfect for warming up your brain muscles.</p>
+        </div>
+
+        <!-- World 2 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 02</span>
+            <span class="world-grid-size">5×5 GRID</span>
+          </div>
+          <h3 class="world-name">Mind Weaver</h3>
+          <span class="world-range">Levels 26 – 50</span>
+          <p class="world-desc">Introduces intentional detours, perimeter wraps, and deceptive paths that look right but trap cells.</p>
+        </div>
+
+        <!-- World 3 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 03</span>
+            <span class="world-grid-size">6×6 GRID</span>
+          </div>
+          <h3 class="world-name">Labyrinth Gate</h3>
+          <span class="world-range">Levels 51 – 75</span>
+          <p class="world-desc">Larger surface area with up to 7 checkpoints. Requires visualizing the exit corridor before connecting.</p>
+        </div>
+
+        <!-- World 4 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 04</span>
+            <span class="world-grid-size">6×6 GRID</span>
+          </div>
+          <h3 class="world-name">Expert Realm</h3>
+          <span class="world-range">Levels 76 – 100</span>
+          <p class="world-desc">Dense topological bottlenecks where one wrong directional choice causes an unrecoverable dead-end.</p>
+        </div>
+
+        <!-- World 5 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 05</span>
+            <span class="world-grid-size">7×7 GRID</span>
+          </div>
+          <h3 class="world-name">Shadow Maze</h3>
+          <span class="world-range">Levels 101 – 135</span>
+          <p class="world-desc">49 cells to traverse seamlessly. Tests your macro pattern recognition and backtracking restraint.</p>
+        </div>
+
+        <!-- World 6 -->
+        <div class="world-card">
+          <div class="world-header">
+            <span class="world-num">WORLD 06</span>
+            <span class="world-grid-size">7×7 GRID</span>
+          </div>
+          <h3 class="world-name">Cipher Grid</h3>
+          <span class="world-range">Levels 136 – 300</span>
+          <p class="world-desc">The ultimate masterclass. Master-level configurations engineered to challenge veteran puzzle solvers.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Daily Challenge & Streak Motivation -->
+    <section class="section-wrapper" id="daily">
+      <div class="daily-box">
+        <div>
+          <div class="daily-badge-strip">
+            <span class="section-tag" style="margin-bottom: 0;">// DAILY GLOBAL PUZZLE</span>
+            <span class="streak-flame-chip">🔥 7-DAY STREAKS</span>
+          </div>
+
+          <h2>Solve Today's Challenge</h2>
+          <p style="margin-top: 10px; color: var(--text-secondary);">
+            Every 24 hours, a brand-new procedural puzzle unlocks simultaneously for every player worldwide. Compete against yourself, build your daily streak, and keep your mind sharp.
+          </p>
+
+          <div class="daily-timer-wrap">
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-hours">00</div>
+              <div class="countdown-lbl">Hours</div>
+            </div>
+            <span style="font-family: var(--font-retro); color: var(--text-muted);">:</span>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-minutes">00</div>
+              <div class="countdown-lbl">Mins</div>
+            </div>
+            <span style="font-family: var(--font-retro); color: var(--text-muted);">:</span>
+            <div class="countdown-box">
+              <div class="countdown-num" id="cd-seconds">00</div>
+              <div class="countdown-lbl">Secs</div>
+            </div>
+            <div style="margin-left: 12px; font-size: 0.85rem; color: var(--text-muted);">
+              Until Next Daily Puzzle
+            </div>
+          </div>
+
+          <a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" 
+             id="daily-deep-link" 
+             class="btn btn-primary">
+            Play Today's Puzzle ↗
+          </a>
+        </div>
+
+        <div class="daily-visual-preview">
+          <div style="font-family: var(--font-retro); font-size: 0.75rem; color: var(--accent-amber); margin-bottom: 14px;" id="daily-live-date">
+            TODAY'S DAILY PUZZLE
+          </div>
+          <!-- Mini Preview Board -->
+          <svg viewBox="0 0 160 160" width="160" height="160">
+            <rect width="160" height="160" rx="16" fill="#121824" stroke="rgba(255,255,255,0.08)" stroke-width="1.5"/>
+            <!-- 3x3 Daily teaser grid -->
+            <rect x="15" y="15" width="38" height="38" rx="6" fill="#1A2232"/>
+            <circle cx="34" cy="34" r="10" fill="#F59E0B"/>
+            <text x="34" y="38" text-anchor="middle" font-family="'Press Start 2P'" font-size="8" fill="#090C12">1</text>
+
+            <rect x="61" y="15" width="38" height="38" rx="6" fill="#1A2232"/>
+            <rect x="107" y="15" width="38" height="38" rx="6" fill="#1A2232"/>
+            <circle cx="126" cy="34" r="10" fill="#F59E0B"/>
+            <text x="126" y="38" text-anchor="middle" font-family="'Press Start 2P'" font-size="8" fill="#090C12">2</text>
+
+            <rect x="15" y="61" width="38" height="38" rx="6" fill="#1A2232"/>
+            <rect x="61" y="61" width="38" height="38" rx="6" fill="#1A2232"/>
+            <rect x="107" y="61" width="38" height="38" rx="6" fill="#1A2232"/>
+
+            <rect x="15" y="107" width="38" height="38" rx="6" fill="#1A2232"/>
+            <circle cx="34" cy="126" r="10" fill="#F59E0B"/>
+            <text x="34" y="130" text-anchor="middle" font-family="'Press Start 2P'" font-size="8" fill="#090C12">3</text>
+            <rect x="61" y="107" width="38" height="38" rx="6" fill="#1A2232"/>
+            <rect x="107" y="107" width="38" height="38" rx="6" fill="#1A2232"/>
+
+            <!-- Connecting Path -->
+            <path d="M 34 34 L 126 34 L 126 80 L 80 80 L 80 126 L 34 126" fill="none" stroke="#00E676" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+          <div style="font-size: 0.8rem; color: var(--text-secondary); margin-top: 12px;">
+            Same board for everyone worldwide
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. In-Game Visual Themes Showcase -->
+    <section class="section-wrapper" id="themes">
+      <div class="section-header">
+        <span class="section-tag">// AESTHETICS & CUSTOMIZATION</span>
+        <h2>Tailor Your Experience</h2>
+        <p>Switch between 6 distinct handcrafted visual themes inside the game to suit your environment and mood.</p>
+      </div>
+
+      <div class="themes-container">
+        <!-- Theme Selection Tabs -->
+        <div class="themes-list" role="tablist">
+          <button class="theme-tab-btn active" data-theme="midnight" role="tab" aria-selected="true">
+            <div class="theme-btn-info">
+              <h4>Midnight</h4>
+              <p>Obsidian + Neon Mint</p>
+            </div>
+            <div class="theme-color-dot" style="background: #00E676; box-shadow: 0 0 8px #00E676;"></div>
+          </button>
+
+          <button class="theme-tab-btn" data-theme="paper" role="tab" aria-selected="false">
+            <div class="theme-btn-info">
+              <h4>Paper</h4>
+              <p>Ivory + Ink Black</p>
+            </div>
+            <div class="theme-color-dot" style="background: #F5F2E9; border-color: #1A1A1A;"></div>
+          </button>
+
+          <button class="theme-tab-btn" data-theme="emerald" role="tab" aria-selected="false">
+            <div class="theme-btn-info">
+              <h4>Emerald</h4>
+              <p>Forest + Mint Glow</p>
+            </div>
+            <div class="theme-color-dot" style="background: #10B981; box-shadow: 0 0 8px #10B981;"></div>
+          </button>
+
+          <button class="theme-tab-btn" data-theme="neon" data-label="Pro" role="tab" aria-selected="false">
+            <div class="theme-btn-info">
+              <h4>Neon Pro</h4>
+              <p>Cyber Violet + Cyan</p>
+            </div>
+            <div class="theme-color-dot" style="background: #00F0FF; box-shadow: 0 0 8px #00F0FF;"></div>
+          </button>
+
+          <button class="theme-tab-btn" data-theme="sunset" data-label="Pro" role="tab" aria-selected="false">
+            <div class="theme-btn-info">
+              <h4>Sunset Pro</h4>
+              <p>Twilight + Amber Rays</p>
+            </div>
+            <div class="theme-color-dot" style="background: #FB923C; box-shadow: 0 0 8px #FB923C;"></div>
+          </button>
+
+          <button class="theme-tab-btn" data-theme="mono" role="tab" aria-selected="false">
+            <div class="theme-btn-info">
+              <h4>Mono</h4>
+              <p>Minimalist Grayscale</p>
+            </div>
+            <div class="theme-color-dot" style="background: #FFFFFF;"></div>
+          </button>
+        </div>
+
+        <!-- Theme Live Preview Canvas -->
+        <div class="theme-display-canvas" id="theme-preview-canvas">
+          <!-- Populated by theme-showcase.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Core Features Grid -->
+    <section class="section-wrapper" id="features">
+      <div class="section-header">
+        <span class="section-tag">// BUILT WITH CRAFTSMANSHIP</span>
+        <h2>Why Players Love Numpath</h2>
+        <p>Engineered from the ground up to be a relaxing, deeply engaging puzzle companion on your phone.</p>
+      </div>
+
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">⚡</div>
+          <h3 class="feature-title">Pure Offline Play</h3>
+          <p class="feature-desc">All 300 handcrafted campaign levels are available without internet. Play on flights, commutes, or in low-coverage zones.</p>
+        </div>
+
+        <!-- Feature 2 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">🧘</div>
+          <h3 class="feature-title">Zero Clutter & Pressure</h3>
+          <p class="feature-desc">No loud timers or flashing countdowns. Solve each topological grid at your own natural rhythm without anxiety.</p>
+        </div>
+
+        <!-- Feature 3 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">🎵</div>
+          <h3 class="feature-title">Tactile Audio & Cues</h3>
+          <p class="feature-desc">Ascending melodic pitches guide every connected cell, providing crisp auditory feedback as you near completion.</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">↺</div>
+          <h3 class="feature-title">Instant Undo & Restart</h3>
+          <p class="feature-desc">Accidentally boxed yourself in? One tap gently unwinds your latest move so you can try a fresh line of inquiry instantly.</p>
+        </div>
+
+        <!-- Feature 5 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">🧠</div>
+          <h3 class="feature-title">Mental Clarity & Flow</h3>
+          <p class="feature-desc">Engages spatial reasoning, forward-path prediction, and working memory in a calm, enjoyable daily habit.</p>
+        </div>
+
+        <!-- Feature 6 -->
+        <div class="feature-card interactive-hover">
+          <div class="feature-icon-box">📱</div>
+          <h3 class="feature-title">Battery & Storage Friendly</h3>
+          <p class="feature-desc">Lightweight installation size, zero background bloat, and optimized rendering to protect your battery life.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Final CTA Banner with Google Play & QR Code -->
+    <section class="section-wrapper" id="download">
+      <div class="cta-banner">
+        <div class="cta-left">
+          <img src="assets/icons/app_icon.png" alt="Numpath Puzzle App Icon" class="cta-app-icon-img">
+          <span class="section-tag" style="background: rgba(0, 230, 118, 0.15);">// START PLAYING TODAY</span>
+          <h2>Ready to Find Your Path?</h2>
+          <p>
+            Download Numpath Puzzle for free on Google Play. Start mastering 300 levels of pure spatial logic and join players solving daily paths worldwide.
+          </p>
+
+          <a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="btn btn-playstore">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" style="flex-shrink: 0;">
+              <path d="M3.6 2.3A1.8 1.8 0 0 0 3 3.6v16.8a1.8 1.8 0 0 0 .6 1.3l9.4-9.4L3.6 2.3z" fill="#00E5FF"/>
+              <path d="M16.5 9.5l-3.5 2.8 3.5 2.8 4-2.3c1.2-.7 1.2-1.9 0-2.6l-4-2.3l0 1.6z" fill="#FFD54F"/>
+              <path d="M13 12.3L3.6 21.7c.4.2 1 .2 1.5-.1l11.4-6.5l-3.5-2.8z" fill="#FF3366"/>
+              <path d="M16.5 8.9L5.1 2.4c-.5-.3-1.1-.3-1.5-.1L13 11.7l3.5-2.8z" fill="#00E676"/>
+            </svg>
+            <div class="btn-playstore-content">
+              <span class="btn-playstore-small">DOWNLOAD ON</span>
+              <span class="btn-playstore-title">Google Play</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="cta-right">
+          <div class="qr-code-box" title="Scan with phone camera to download">
+            <!-- Clean SVG QR Code Representation -->
+            <svg viewBox="0 0 100 100" width="120" height="120">
+              <!-- Corner 1 (Top Left) -->
+              <rect x="10" y="10" width="28" height="28" fill="#090C12" rx="4"/>
+              <rect x="16" y="16" width="16" height="16" fill="#FFFFFF"/>
+              <rect x="20" y="20" width="8" height="8" fill="#090C12"/>
+              <!-- Corner 2 (Top Right) -->
+              <rect x="62" y="10" width="28" height="28" fill="#090C12" rx="4"/>
+              <rect x="68" y="16" width="16" height="16" fill="#FFFFFF"/>
+              <rect x="72" y="20" width="8" height="8" fill="#090C12"/>
+              <!-- Corner 3 (Bottom Left) -->
+              <rect x="10" y="62" width="28" height="28" fill="#090C12" rx="4"/>
+              <rect x="16" y="68" width="16" height="16" fill="#FFFFFF"/>
+              <rect x="20" y="72" width="8" height="8" fill="#090C12"/>
+              <!-- Center & Data bits -->
+              <rect x="44" y="12" width="10" height="8" fill="#090C12"/>
+              <rect x="44" y="26" width="10" height="12" fill="#090C12"/>
+              <rect x="12" y="44" width="8" height="12" fill="#090C12"/>
+              <rect x="26" y="44" width="12" height="8" fill="#090C12"/>
+              <rect x="44" y="44" width="12" height="12" fill="#00E676"/>
+              <rect x="62" y="44" width="10" height="8" fill="#090C12"/>
+              <rect x="78" y="44" width="12" height="12" fill="#090C12"/>
+              <rect x="44" y="62" width="8" height="14" fill="#090C12"/>
+              <rect x="62" y="62" width="14" height="8" fill="#090C12"/>
+              <rect x="62" y="76" width="26" height="14" fill="#090C12"/>
+            </svg>
+          </div>
+          <span class="qr-label">SCAN TO OPEN PLAY STORE</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <div class="brand-icon">
+            <img src="assets/icons/app_icon.png" alt="Numpath Puzzle Logo" class="brand-app-img">
+          </div>
+          <span class="brand-name">NUMPATH <span>PUZZLE</span></span>
+        </a>
+        <p>The minimalist logic puzzle where one continuous path must cover 100% of the grid in sequential order without crossing.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Game</h5>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#rules">How to Play</a></li>
+          <li><a href="#worlds">300 Levels</a></li>
+          <li><a href="#daily">Daily Challenge</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Showcase</h5>
+        <ul class="footer-links">
+          <li><a href="#themes">Visual Themes</a></li>
+          <li><a href="#features">Key Features</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle" target="_blank" rel="noopener noreferrer">Google Play Store ↗</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Legal & Safety</h5>
+        <ul class="footer-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+          <li><a href="mailto:support@numpathpuzzle.com">Support Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Numpath Puzzle. Package ID: <code>com.aankit.NumpathPuzzle.numpath_puzzle</code>. All rights reserved.</p>
+      <p>Crafted for logic puzzle lovers.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/board-preview.js"></script>
+  <script src="js/theme-showcase.js"></script>
+  <script src="js/daily-card.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
