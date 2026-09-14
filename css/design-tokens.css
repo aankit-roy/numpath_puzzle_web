@@ -54,32 +54,69 @@
   --radius-lg: 20px;
   --radius-full: 9999px;
 
+  /* Text Gradients */
+  --gradient-text-start: #FFFFFF;
+  --gradient-text-mint: #00E676;
+  --gradient-text-amber: #F59E0B;
+  --gradient-text-cyan: #00E5FF;
+
+  /* Header & Footer */
+  --bg-header: rgba(9, 11, 16, 0.82);
+  --bg-footer: #06080C;
+
   /* Transitions */
   --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-normal: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --transition-slow: 400ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Light Mode Overrides (Optional Toggle) */
+/* Light Mode Overrides (Polished High-Contrast Palette) */
 [data-theme="light"] {
-  --bg-canvas: #F8F9FB;
+  --bg-canvas: #F8FAFC;
   --bg-surface: #FFFFFF;
-  --bg-surface-elevated: #F1F4F9;
+  --bg-surface-elevated: #F1F5F9;
   --bg-glass: rgba(255, 255, 255, 0.85);
-  --bg-glass-elevated: rgba(241, 244, 249, 0.9);
+  --bg-glass-elevated: rgba(241, 245, 249, 0.9);
 
-  --border-subtle: rgba(0, 0, 0, 0.08);
-  --border-light: rgba(0, 0, 0, 0.14);
-  --border-neon: rgba(0, 179, 89, 0.4);
+  --border-subtle: rgba(15, 23, 42, 0.08);
+  --border-light: rgba(15, 23, 42, 0.14);
+  --border-neon: rgba(5, 150, 105, 0.3);
+  --border-glow: 0 0 20px rgba(5, 150, 105, 0.15);
+
+  /* Deep High-Contrast Brand Accents for Light Background */
+  --accent-mint: #059669;
+  --accent-mint-glow: rgba(5, 150, 105, 0.35);
+  --accent-mint-dark: #047857;
+  --accent-amber: #D97706;
+  --accent-amber-glow: rgba(217, 119, 6, 0.3);
+  --accent-cyan: #0284C7;
+  --accent-cyan-glow: rgba(2, 132, 199, 0.3);
+  --accent-purple: #7C3AED;
+  --accent-rose: #E11D48;
 
   --text-primary: #0F172A;
   --text-secondary: #475569;
   --text-muted: #64748B;
   --text-inverse: #FFFFFF;
 
-  --cell-bg: #E8EDF5;
-  --cell-border: rgba(0, 0, 0, 0.08);
-  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.09);
-  --shadow-lg: 0 16px 40px rgba(0, 0, 0, 0.12);
+  --cell-bg: #E2E8F0;
+  --cell-border: rgba(15, 23, 42, 0.06);
+  --cell-active: #059669;
+  --checkpoint-bg: #D97706;
+  --checkpoint-color: #FFFFFF;
+
+  /* Gradients tailored for light mode readability */
+  --gradient-text-start: #0F172A;
+  --gradient-text-mint: #059669;
+  --gradient-text-amber: #D97706;
+  --gradient-text-cyan: #0284C7;
+
+  /* Header & Footer */
+  --bg-header: rgba(255, 255, 255, 0.88);
+  --bg-footer: #F1F5F9;
+
+  --shadow-sm: 0 2px 8px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 8px 24px rgba(15, 23, 42, 0.07);
+  --shadow-lg: 0 16px 40px rgba(15, 23, 42, 0.1);
+  --shadow-neon: 0 0 25px rgba(5, 150, 105, 0.2);
 }

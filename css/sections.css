@@ -421,7 +421,7 @@
 .countdown-num {
   font-family: var(--font-retro);
   font-size: 1.3rem;
-  color: #FFFFFF;
+  color: var(--text-primary);
 }
 
 .countdown-lbl {
@@ -584,4 +584,77 @@
   font-size: 1.15rem;
   margin-bottom: 32px;
   max-width: 580px;
+}
+
+/* =========================================
+   Light Mode Overrides for Sections
+   ========================================= */
+[data-theme="light"] .section-tag {
+  background: rgba(5, 150, 105, 0.08);
+  border-color: rgba(5, 150, 105, 0.25);
+  color: #047857;
+}
+
+[data-theme="light"] .rule-card {
+  background: #FFFFFF;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .rule-card:hover {
+  border-color: rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
+}
+
+[data-theme="light"] .rule-visual {
+  background: #0D131F;
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .world-card {
+  background: #FFFFFF;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .world-card:hover {
+  border-color: rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
+}
+
+[data-theme="light"] .world-grid-size {
+  background: rgba(15, 23, 42, 0.06);
+  color: var(--text-secondary);
+}
+
+[data-theme="light"] .daily-box {
+  background: linear-gradient(135deg, #FFFFFF 0%, #F8FAFC 100%);
+  border-color: rgba(5, 150, 105, 0.25);
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.06);
+}
+
+[data-theme="light"] .countdown-box {
+  background: var(--bg-surface-elevated);
+  border-color: rgba(15, 23, 42, 0.08);
+}
+
+[data-theme="light"] .daily-visual-preview {
+  background: #0D131F;
+}
+
+[data-theme="light"] .feature-card {
+  background: #FFFFFF;
+  border-color: rgba(15, 23, 42, 0.08);
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.05);
+}
+
+[data-theme="light"] .feature-card:hover {
+  border-color: rgba(5, 150, 105, 0.4);
+  box-shadow: 0 8px 24px rgba(5, 150, 105, 0.12);
+}
+
+[data-theme="light"] .cta-banner {
+  background: linear-gradient(135deg, #F0FDF4 0%, #FFFFFF 100%);
+  border-color: rgba(5, 150, 105, 0.25);
+  box-shadow: 0 10px 40px rgba(5, 150, 105, 0.08);
 }

@@ -26,6 +26,11 @@
   transform: translateY(0);
 }
 
+[data-theme="light"] .mobile-nav-drawer {
+  background: rgba(248, 250, 252, 0.97);
+  border-bottom: 1px solid var(--border-light);
+}
+
 .mobile-nav-links {
   display: flex;
   flex-direction: column;

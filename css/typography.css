@@ -80,19 +80,19 @@ p {
 }
 
 .text-gradient-mint {
-  background: linear-gradient(135deg, #FFFFFF 20%, var(--accent-mint) 100%);
+  background: linear-gradient(135deg, var(--gradient-text-start, #FFFFFF) 15%, var(--gradient-text-mint, var(--accent-mint)) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-amber {
-  background: linear-gradient(135deg, #FFFFFF 20%, var(--accent-amber) 100%);
+  background: linear-gradient(135deg, var(--gradient-text-start, #FFFFFF) 15%, var(--gradient-text-amber, var(--accent-amber)) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-cyan {
-  background: linear-gradient(135deg, #FFFFFF 20%, var(--accent-cyan) 100%);
+  background: linear-gradient(135deg, var(--gradient-text-start, #FFFFFF) 15%, var(--gradient-text-cyan, var(--accent-cyan)) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
