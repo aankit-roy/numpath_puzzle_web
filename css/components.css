@@ -150,6 +150,8 @@
   top: 0;
   left: 0;
   right: 0;
+  width: 100%;
+  max-width: 100%;
   z-index: 1000;
   background: var(--bg-header, rgba(9, 11, 16, 0.82));
   backdrop-filter: blur(20px);
@@ -160,8 +162,9 @@
 
 .navbar {
   max-width: var(--max-width);
+  width: 100%;
   margin: 0 auto;
-  padding: 16px 24px;
+  padding: 14px 20px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -293,12 +296,26 @@
 /* Mobile Toggle */
 .mobile-toggle {
   display: none;
-  background: transparent;
-  border: none;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
   color: var(--text-primary);
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   cursor: pointer;
-  padding: 8px;
+  padding: 8px 12px;
+  line-height: 1;
+  transition: all var(--transition-fast);
+}
+
+.mobile-toggle:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: var(--border-light);
+}
+
+[data-theme="light"] .mobile-toggle {
+  background: rgba(0, 0, 0, 0.05);
+  border-color: var(--border-light);
+  color: var(--text-primary);
 }
 
 /* Theme Toggle Button */

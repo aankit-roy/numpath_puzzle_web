@@ -86,13 +86,15 @@
 
 .bg-ambient-aura {
   position: absolute;
-  width: 600px;
-  height: 600px;
+  width: min(600px, 90vw);
+  height: min(600px, 90vw);
   border-radius: 50%;
-  filter: blur(140px);
+  filter: blur(120px);
   pointer-events: none;
   z-index: 0;
-  opacity: 0.18;
+  opacity: 0.16;
+  max-width: 100vw;
+  overflow: hidden;
 }
 
 .aura-mint {
@@ -105,13 +107,22 @@
 .aura-amber {
   background: radial-gradient(circle, var(--accent-amber) 0%, transparent 70%);
   bottom: 10%;
-  right: 10%;
+  right: 0%;
 }
 
 .aura-cyan {
   background: radial-gradient(circle, var(--accent-cyan) 0%, transparent 70%);
   top: 50%;
-  left: 10%;
+  left: 0%;
+}
+
+@media (max-width: 768px) {
+  .bg-ambient-aura {
+    width: 280px;
+    height: 280px;
+    filter: blur(80px);
+    opacity: 0.12;
+  }
 }
 
 /* Reduced Motion */
