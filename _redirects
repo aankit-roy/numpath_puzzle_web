@@ -1,0 +1,3 @@
+# Netlify Redirect Rules
+/privacy    https://app.notion.com/p/Numpath-Puzzle-Privacy-Policy-3d450ced4a4e8080a553d21c041fedac    301
+/terms      /    301
