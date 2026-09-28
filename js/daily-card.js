@@ -53,7 +53,9 @@ document.addEventListener('DOMContentLoaded', () => {
       const day = String(now.getDate()).padStart(2, '0');
       const dateStr = `${year}-${month}-${day}`;
 
-      const playStoreUrl = 'https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle';
+      const playStoreUrl = (typeof APP_CONSTANTS !== 'undefined' && APP_CONSTANTS.playStoreUrl) 
+        ? APP_CONSTANTS.playStoreUrl 
+        : 'https://play.google.com/store/apps/details?id=com.aankit.NumpathPuzzle.numpath_puzzle';
       const deepLinkUrl = `numpath://daily?date=${dateStr}`;
 
       // Check if user is on mobile
